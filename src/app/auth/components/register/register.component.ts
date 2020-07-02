@@ -8,8 +8,8 @@ import {
   isSubmittingSelector,
   validationErrorsSelector,
 } from 'src/app/auth/store/selectors';
-import { RegisterRequestInterface } from 'src/app/auth/types/registerRequest.interface';
-import { BackendErrorsInterface } from 'src/app/shared/types/backendErrors.interface';
+import { RegisterRequestInterface } from 'src/app/auth/types/register-request.interface';
+import { BackendErrorsInterface } from 'src/app/shared/types/backend-errors.interface';
 
 @Component({
   selector: 'app-register',
