@@ -11,6 +11,7 @@ import { reducers } from 'src/app/auth/store/reducers';
 import { AuthService } from 'src/app/auth/services/auth.service';
 import { RegisterEffect } from 'src/app/auth/store/effects/register.effect';
 import { LoginEffect } from 'src/app/auth/store/effects/login.effect';
+import { GetCurrentUserEffect } from './store/effects/get-current-user.effect';
 import { BackendErrorMessagesModule } from '../shared/modules/backend-error-messages/backend-error-messages.module';
 import { PersistanceService } from '../shared/services/persistance.service';
 
@@ -32,7 +33,11 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     ReactiveFormsModule,
     StoreModule.forFeature('auth', reducers),
-    EffectsModule.forFeature([RegisterEffect, LoginEffect]),
+    EffectsModule.forFeature([
+      RegisterEffect,
+      LoginEffect,
+      GetCurrentUserEffect,
+    ]),
     BackendErrorMessagesModule,
   ],
   providers: [AuthService, PersistanceService],
