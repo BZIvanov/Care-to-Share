@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
 import { TopBarModule } from './shared/modules/top-bar/top-bar.module';
+import { GlobalFeedModule } from './global-feed/global-feed.module';
 import { environment } from 'src/environments/environment';
 import { PersistanceService } from './shared/services/persistance.service';
 import { AuthInterceptor } from './shared/services/auth.interceptor';
@@ -21,6 +22,7 @@ import { AuthInterceptor } from './shared/services/auth.interceptor';
     AppRoutingModule,
     AuthModule,
     TopBarModule,
+    GlobalFeedModule,
     StoreModule.forRoot({}),
     StoreDevtoolsModule.instrument({
       maxAge: 25,

@@ -14,9 +14,9 @@ export class AuthInterceptor implements HttpInterceptor {
   constructor(private persistanceService: PersistanceService) {}
 
   intercept(
-    request: HttpRequest<unknown>,
+    request: HttpRequest<any>,
     next: HttpHandler
-  ): Observable<HttpEvent<unknown>> {
+  ): Observable<HttpEvent<any>> {
     const token = this.persistanceService.get('accessToken');
     request = request.clone({
       setHeaders: {
