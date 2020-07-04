@@ -13,6 +13,7 @@ import {
   errorSelector,
 } from '../../store/selectors';
 import { getArticleAction } from '../../store/actions/get-article.action';
+import { deleteArticleAction } from '../../store/actions/delete-article.action';
 
 @Component({
   selector: 'app-article',
@@ -71,5 +72,9 @@ export class ArticleComponent implements OnInit, OnDestroy {
 
   fetchData(): void {
     this.store.dispatch(getArticleAction({ slug: this.slug }));
+  }
+
+  deleteArticle(): void {
+    this.store.dispatch(deleteArticleAction({ slug: this.slug }));
   }
 }

@@ -13,6 +13,7 @@ import { TopBarModule } from './shared/modules/top-bar/top-bar.module';
 import { GlobalFeedModule } from './global-feed/global-feed.module';
 import { YourFeedModule } from './your-feed/your-feed.module';
 import { TagFeedModule } from './tag-feed/tag-feed.module';
+import { CreateArticleModule } from './create-article/create-article.module';
 import { ArticleModule } from './article/article.module';
 import { environment } from 'src/environments/environment';
 import { PersistanceService } from './shared/services/persistance.service';
@@ -29,6 +30,7 @@ import { AuthInterceptor } from './shared/services/auth.interceptor';
     GlobalFeedModule,
     YourFeedModule,
     TagFeedModule,
+    CreateArticleModule,
     ArticleModule,
     StoreModule.forRoot({ router: routerReducer }),
     StoreRouterConnectingModule.forRoot(),

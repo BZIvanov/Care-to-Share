@@ -10,7 +10,9 @@ import { LoadingModule } from '../shared/modules/loading/loading.module';
 import { ErrorMessageModule } from '../shared/modules/error-message/error-message.module';
 import { TagListModule } from '../shared/modules/tag-list/tag-list.module';
 import { GetArticleEffect } from './store/effects/get-article.effect';
-import { ArticleService } from '../shared/services/article.service';
+import { DeleteArticleEffect } from './store/effects/delete-article.effect';
+import { ArticleService } from './services/article.service';
+import { ArticleService as SharedArticleService } from '../shared/services/article.service';
 
 const routes: Routes = [
   {
@@ -25,11 +27,11 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes),
     StoreModule.forFeature('article', reducers),
-    EffectsModule.forFeature([GetArticleEffect]),
+    EffectsModule.forFeature([GetArticleEffect, DeleteArticleEffect]),
     LoadingModule,
     ErrorMessageModule,
     TagListModule,
   ],
-  providers: [ArticleService],
+  providers: [ArticleService, SharedArticleService],
 })
 export class ArticleModule {}
