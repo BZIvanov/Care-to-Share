@@ -17,6 +17,7 @@ import { CreateArticleModule } from './create-article/create-article.module';
 import { ArticleModule } from './article/article.module';
 import { EditArticleModule } from 'src/app/edit-article/edit-article.module';
 import { SettingsModule } from './settings/settings.module';
+import { UserProfileModule } from './user-profile/user-profile.module';
 import { environment } from 'src/environments/environment';
 import { PersistanceService } from './shared/services/persistance.service';
 import { AuthInterceptor } from './shared/services/auth.interceptor';
@@ -36,6 +37,7 @@ import { AuthInterceptor } from './shared/services/auth.interceptor';
     ArticleModule,
     EditArticleModule,
     SettingsModule,
+    UserProfileModule,
     StoreModule.forRoot({ router: routerReducer }),
     StoreRouterConnectingModule.forRoot(),
     StoreDevtoolsModule.instrument({
