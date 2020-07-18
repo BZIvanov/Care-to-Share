@@ -34,7 +34,6 @@ export class RegisterComponent implements OnInit {
   }
 
   initializeForm(): void {
-    console.log('initializeForm');
     this.form = this.fb.group({
       username: ['', Validators.required],
       email: ['', Validators.required],
@@ -43,7 +42,6 @@ export class RegisterComponent implements OnInit {
   }
 
   onSubmit(): void {
-    console.log('submit', this.form.value, this.form.valid);
     const request: RegisterRequestInterface = {
       user: this.form.value,
     };
