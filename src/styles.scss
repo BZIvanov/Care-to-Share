@@ -6067,13 +6067,7 @@ ul.tag-list {
 ul.tag-list li {
   display: inline-block !important;
 }
-.navbar-brand {
-  font-family: titillium web, sans-serif;
-  font-size: 1.5rem !important;
-  padding-top: 0 !important;
-  margin-right: 2rem !important;
-  color: #5cb85c !important;
-}
+
 .nav-link .user-pic {
   height: 26px;
   border-radius: 50px;
@@ -6098,45 +6092,7 @@ ul.tag-list li {
   border-bottom: 2px solid #5cb85c !important;
   color: #5cb85c !important;
 }
-footer {
-  background: #f3f3f3;
-  margin-top: 3rem;
-  padding: 1rem 0;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-footer .logo-font {
-  vertical-align: middle;
-}
-footer .attribution {
-  vertical-align: middle;
-  margin-left: 10px;
-  font-size: 0.8rem;
-  color: #bbb;
-  font-weight: 300;
-}
-.banner {
-  color: #fff;
-  background: #333;
-  padding: 2rem;
-  margin-bottom: 2rem;
-}
-.banner h1 {
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  margin-bottom: 0;
-}
+
 .container.page {
   margin-top: 1.5rem;
-}
-.preview-link {
-  color: inherit !important;
-}
-.preview-link:hover {
-  text-decoration: inherit !important;
-}
-.article-meta {
-  display: block;
-  position: relative;
-  font-weight: 300;
 }
