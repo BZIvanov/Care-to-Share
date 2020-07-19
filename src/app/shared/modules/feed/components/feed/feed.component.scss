@@ -10,6 +10,14 @@
   font-weight: 300;
 }
 
+.preview-link {
+  color: inherit;
+}
+
+.preview-link:hover {
+  text-decoration: inherit;
+}
+
 .preview-link h1 {
   font-weight: 600;
   font-size: 1.5rem;
