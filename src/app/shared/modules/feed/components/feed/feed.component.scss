@@ -1,9 +1,3 @@
-.info .date {
-  color: #bbb;
-  font-size: 0.8rem;
-  display: block;
-}
-
 .article-preview {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1.5rem 0;
@@ -11,11 +5,14 @@
 
 .article-meta {
   margin: 0 0 1rem;
+  display: block;
+  position: relative;
+  font-weight: 300;
 }
 
 .preview-link h1 {
-  font-weight: 600 !important;
-  font-size: 1.5rem !important;
+  font-weight: 600;
+  font-size: 1.5rem;
   margin-bottom: 3px;
 }
 

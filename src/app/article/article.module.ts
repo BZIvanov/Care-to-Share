@@ -9,6 +9,7 @@ import { ArticleComponent } from './components/article/article.component';
 import { LoadingModule } from '../shared/modules/loading/loading.module';
 import { ErrorMessageModule } from '../shared/modules/error-message/error-message.module';
 import { TagListModule } from '../shared/modules/tag-list/tag-list.module';
+import { UserLinkModule } from '../shared/modules/user-link/user-link.module';
 import { GetArticleEffect } from './store/effects/get-article.effect';
 import { DeleteArticleEffect } from './store/effects/delete-article.effect';
 import { ArticleService } from './services/article.service';
@@ -31,6 +32,7 @@ const routes: Routes = [
     LoadingModule,
     ErrorMessageModule,
     TagListModule,
+    UserLinkModule,
   ],
   providers: [ArticleService, SharedArticleService],
 })

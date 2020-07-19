@@ -13,6 +13,7 @@ import { LoadingModule } from 'src/app/shared/modules/loading/loading.module';
 import { PaginationModule } from 'src/app/shared/modules/pagination/pagination.module';
 import { TagListModule } from '../tag-list/tag-list.module';
 import { AddToFavoritesModule } from '../add-to-favorites/add-to-favorites.module';
+import { UserLinkModule } from '../user-link/user-link.module';
 
 @NgModule({
   declarations: [FeedComponent],
@@ -26,6 +27,7 @@ import { AddToFavoritesModule } from '../add-to-favorites/add-to-favorites.modul
     PaginationModule,
     TagListModule,
     AddToFavoritesModule,
+    UserLinkModule,
   ],
   exports: [FeedComponent],
   providers: [FeedService],
