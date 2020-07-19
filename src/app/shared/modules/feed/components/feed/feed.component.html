@@ -8,15 +8,11 @@
     *ngFor="let article of (feed$ | async)?.articles"
   >
     <div class="article-meta">
-      <a [routerLink]="['/profiles', article.author.username]">
-        <img [src]="article.author.image" />
-      </a>
-      <div class="info">
-        <a [routerLink]="['/profiles', article.author.username]" class="author">
-          {{ article.author.username }}
-        </a>
-        <span class="date">{{ article.createdAt }}</span>
-      </div>
+      <app-user-link
+        [username]="article.author.username"
+        [userImage]="article.author.image"
+        [date]="article.createdAt"
+      ></app-user-link>
       <div class="pull-xs-right">
         <app-add-to-favorites
           [isFavorited]="article.favorited"

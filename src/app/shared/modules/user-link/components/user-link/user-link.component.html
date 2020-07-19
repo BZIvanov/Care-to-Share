@@ -1,0 +1,11 @@
+<a [routerLink]="['/profiles', usernameProps]">
+  <img [src]="userImageProps" />
+</a>
+<div class="info">
+  <a [routerLink]="['/profiles', usernameProps]" class="author">
+    {{ usernameProps }}
+  </a>
+  <span class="date">
+    {{ dateProps | date: "longDate" }}
+  </span>
+</div>
